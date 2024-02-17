@@ -7,6 +7,8 @@ class MerkleTree {
     this.concat = (left, right) => keccak256(Buffer.concat([left, right]));
   }
 
+  
+
   getRoot() {
     return bytesToHex(this._getRoot(this.leaves));
   }
